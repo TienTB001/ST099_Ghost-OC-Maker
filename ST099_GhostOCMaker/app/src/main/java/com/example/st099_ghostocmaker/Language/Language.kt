@@ -1,10 +1,7 @@
 package com.example.st099_ghostocmaker.Language
 
 import android.content.Intent
-import android.graphics.LinearGradient
-import android.graphics.Shader
 import android.os.Bundle
-import android.util.Log
 import android.view.ViewTreeObserver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -12,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.st099_ghostocmaker.R
 import com.example.st099_ghostocmaker.Ultils.StoreSharedPreferences
 import com.example.st099_ghostocmaker.databinding.ActivityLanguageBinding
-import com.example.st099_ghostocmaker.intro.Intro
+import com.example.st099_ghostocmaker.intro.IntroActivity
 
 class Language : AppCompatActivity() {
 
@@ -74,7 +71,7 @@ class Language : AppCompatActivity() {
                 if (isSetting) {
                     finish()
                 } else {
-                    val intent = Intent(this, Intro::class.java)
+                    val intent = Intent(this, IntroActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

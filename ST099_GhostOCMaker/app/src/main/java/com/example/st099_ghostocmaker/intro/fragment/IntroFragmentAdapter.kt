@@ -8,9 +8,9 @@ class IntroFragmentAdapter(fragmentActivity: FragmentActivity) : FragmentStateAd
 
     // Danh sách các fragment bạn muốn hiển thị
     private val fragments = listOf(
-        Intro1(),
-        Intro2(),
-        Intro3()
+        Intro1Fragment(),
+        Intro2Fragment(),
+        Intro3Fragment()
     )
 
     override fun getItemCount(): Int = fragments.size

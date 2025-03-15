@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.st099_ghostocmaker.databinding.FragmentIntro1Binding
 
-class Intro1 : Fragment() {
+class Intro1Fragment : Fragment() {
 
     private lateinit var binding: FragmentIntro1Binding
 

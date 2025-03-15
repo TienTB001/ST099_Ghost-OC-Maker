@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.st099_ghostocmaker.databinding.ActivityIntroBinding
 import com.example.st099_ghostocmaker.intro.fragment.IntroFragmentAdapter
-import com.example.st099_ghostocmaker.permission.Permission
+import com.example.st099_ghostocmaker.ui.PermissionActivity
 
-class Intro : AppCompatActivity() {
+class IntroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityIntroBinding
     private var pressedLastPage = false
@@ -33,7 +33,7 @@ class Intro : AppCompatActivity() {
                 // Đã ở trang cuối
                 if (pressedLastPage) {
                     // Nếu đã nhấn Next một lần ở trang cuối, lần này chuyển màn hình
-                    startActivity(Intent(this, Permission::class.java))
+                    startActivity(Intent(this, PermissionActivity::class.java))
                     finish()
                 } else {
                     // Lần đầu nhấn Next ở trang cuối => chỉ đánh dấu, chưa chuyển

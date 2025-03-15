@@ -1,11 +1,10 @@
-package com.example.st099_ghostocmaker.Customize
+package com.example.st099_ghostocmaker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.st099_ghostocmaker.R
 import com.example.st099_ghostocmaker.databinding.ActivityCustomizeBinding
 
-class Customize : AppCompatActivity() {
+class CustomizeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCustomizeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

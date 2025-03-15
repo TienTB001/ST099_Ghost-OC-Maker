@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ST099_Ghost OC Maker</string>
+    <string name="go_to_setting_title">Pengaturan izin</string>
+    <string name="go_to_setting_message">Aplikasi memerlukan izin ini</string>
+    <string name="settings">Pengaturan</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="Intro2">Hantu Acak</string>
+    <string name="Intro1">Buat Hantu Anda Sendiri</string>
+    <string name="Intro3">Hantu Acak</string>
+    <string name="next">Selanjutnya</string>
+    <string name="Permission">Izin</string>
+    <string name="splash1">Pembuat OC Hantu</string>
+    <string name="splash2">Tindakan ini dapat berisi iklan</string>
+    <string name="permission1">Izinkan <font color="#FF84AC">Ghost OC Maker</font> mengakses foto,\n media, dan file di perangkat Anda</string>
+    <string name="language">Bahasa</string>
+    <string name="Media">Media</string>
+    <string name="Continue">Lanjutkan</string>
+    <string name="Rate">Nilai</string>
+    <string name="Exit">Keluar</string>
+    <string name="Main">Pembuat Hantu</string>
+    <string name="Main1">Buat Hantu</string>
+    <string name="createGhost">Buat Hantu</string>
+    <string name="MyCreation">Kreasi Saya</string>
+    <string name="Category">Kategori</string>
+    <string name="Setting">Pengaturan</string>
+    <string name="RateUs">Nilai Kami</string>
+    <string name="Share">Bagikan</string>
+    <string name="Privacy"><![CDATA[Kebijakan & Privasi]]></string>
+    <string name="TitleRate">Apakah Anda suka aplikasi ini?</string>
+    <string name="DescRate">Beri tahu kami pengalaman Anda</string>
+    <string name="onestart">Oh, tidak!</string>
+    <string name="onestartdesc">Silakan beri kami umpan balik</string>
+    <string name="fowstart">Kami juga mencintaimu!</string>
+    <string name="forstartdesc">Terima kasih atas umpan balik Anda</string>
+    <string name="myAlbum">Album Saya</string>
+    <string name="Create">Buat</string>
+    <string name="Delete">Hapus</string>
+    <string name="DescDelete">Apakah Anda ingin menghapus item ini?</string>
+    <string name="No">Tidak</string>
+    <string name="Yes">Ya</string>
+</resources>

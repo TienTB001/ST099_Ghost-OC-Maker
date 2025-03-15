@@ -1,4 +1,4 @@
-package com.example.st099_ghostocmaker.permission
+package com.example.st099_ghostocmaker.ui
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -12,7 +12,7 @@ import com.example.st099_ghostocmaker.MainActivity
 import com.example.st099_ghostocmaker.R
 import com.example.st099_ghostocmaker.databinding.ActivityPermissionBinding
 
-class Permission : AppCompatActivity() {
+class PermissionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPermissionBinding
     private var isBoolean = true
 

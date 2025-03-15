@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ST099_Ghost OC Maker</string>
+    <string name="go_to_setting_title">अनुमति सेटिंग्स</string>
+    <string name="go_to_setting_message">ऐप को इस अनुमति की आवश्यकता है</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="hello_blank_fragment">नमस्ते खाली खंड</string>
+    <string name="Intro2">यादृच्छिक भूत</string>
+    <string name="Intro1">अपना खुद का भूत बनाएं</string>
+    <string name="Intro3">यादृच्छिक भूत</string>
+    <string name="next">अगला</string>
+    <string name="Permission">अनुमति</string>
+    <string name="splash1">भूत OC मेकर</string>
+    <string name="splash2">इस क्रिया में विज्ञापन हो सकते हैं</string>
+    <string name="permission1">कृपया <font color="#FF84AC">Ghost OC Maker</font> को आपके डिवाइस पर फ़ोटो,\n मीडिया और फ़ाइलों तक पहुंचने की अनुमति दें</string>
+    <string name="language">भाषा</string>
+    <string name="Media">मीडिया</string>
+    <string name="Continue">जारी रखें</string>
+    <string name="Rate">रेटिंग</string>
+    <string name="Exit">बाहर निकलें</string>
+    <string name="Main">भूत निर्माता</string>
+    <string name="Main1">भूत बनाएं</string>
+    <string name="createGhost">भूत बनाएं</string>
+    <string name="MyCreation">मेरी रचना</string>
+    <string name="Category">श्रेणी</string>
+    <string name="Setting">सेटिंग्स</string>
+    <string name="RateUs">हमें रेट करें</string>
+    <string name="Share">शेयर करें</string>
+    <string name="Privacy"><![CDATA[गोपनीयता और नीति]]></string>
+    <string name="TitleRate">क्या आपको ऐप पसंद है?</string>
+    <string name="DescRate">हमें अपने अनुभव के बारे में बताएं</string>
+    <string name="onestart">ओह, नहीं!</string>
+    <string name="onestartdesc">कृपया हमें अपनी प्रतिक्रिया दें</string>
+    <string name="fowstart">हम भी आपसे प्यार करते हैं!</string>
+    <string name="forstartdesc">आपकी प्रतिक्रिया के लिए धन्यवाद</string>
+    <string name="myAlbum">मेरा एल्बम</string>
+    <string name="Create">बनाएं</string>
+    <string name="Delete">हटाएं</string>
+    <string name="DescDelete">क्या आप इस आइटम को हटाना चाहते हैं?</string>
+    <string name="No">नहीं</string>
+    <string name="Yes">हाँ</string>
+</resources>

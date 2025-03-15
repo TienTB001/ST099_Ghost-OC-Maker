@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
     android:background="@color/background"
-    tools:context=".permission.Permission">
+    tools:context=".ui.PermissionActivity">
 
 
     <com.example.st099_ghostocmaker.TextStroke

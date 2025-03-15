@@ -1,4 +1,4 @@
-package com.example.st099_ghostocmaker.Splash
+package com.example.st099_ghostocmaker.ui.Splash
 
 import android.animation.ObjectAnimator
 import android.content.Intent
@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.st099_ghostocmaker.Language.Language
 import com.example.st099_ghostocmaker.Ultils.StoreSharedPreferences
 import com.example.st099_ghostocmaker.databinding.ActivitySplashBinding
-import com.example.st099_ghostocmaker.intro.Intro
+import com.example.st099_ghostocmaker.intro.IntroActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -37,7 +37,7 @@ class SplashActivity : AppCompatActivity() {
             // Chuyển sang màn hình LanguageActivity
 
             if (StoreSharedPreferences.readFromPreferences(this, "hasLanguage").equals("true")) {
-                val intent = Intent(this, Intro::class.java)
+                val intent = Intent(this, IntroActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

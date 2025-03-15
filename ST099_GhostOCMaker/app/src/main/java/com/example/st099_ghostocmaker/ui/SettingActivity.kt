@@ -1,4 +1,4 @@
-package com.example.st099_ghostocmaker.setting
+package com.example.st099_ghostocmaker.ui
 
 import android.content.Intent
 import android.os.Bundle

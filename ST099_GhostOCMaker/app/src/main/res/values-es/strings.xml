@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ST099_Ghost OC Maker</string>
+    <string name="go_to_setting_title">Configuración de permisos</string>
+    <string name="go_to_setting_message">La aplicación necesita este permiso</string>
+    <string name="settings">Configuraciones</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="Intro2">Fantasma Aleatorio</string>
+    <string name="Intro1">Crea tu propio fantasma</string>
+    <string name="Intro3">Fantasma Aleatorio</string>
+    <string name="next">Siguiente</string>
+    <string name="Permission">Permiso</string>
+    <string name="splash1">Creador de OC de Fantasmas</string>
+    <string name="splash2">Esta acción puede contener anuncios</string>
+    <string name="permission1">Permite que <font color="#FF84AC">Ghost OC Maker</font> acceda a fotos,\n medios y archivos en tu dispositivo</string>
+    <string name="language">Idioma</string>
+    <string name="Media">Medios</string>
+    <string name="Continue">Continuar</string>
+    <string name="Rate">Calificar</string>
+    <string name="Exit">Salir</string>
+    <string name="Main">Creador de Fantasmas</string>
+    <string name="Main1">crear Fantasma</string>
+    <string name="createGhost">Crear Fantasma</string>
+    <string name="MyCreation">Mi Creación</string>
+    <string name="Category">Categoría</string>
+    <string name="Setting">Configuraciones</string>
+    <string name="RateUs">Califícanos</string>
+    <string name="Share">Compartir</string>
+    <string name="Privacy"><![CDATA[Privacidad & Política]]></string>
+    <string name="TitleRate">¿Te gusta la aplicación?</string>
+    <string name="DescRate">Háznos saber tu experiencia</string>
+    <string name="onestart">¡Oh, no!</string>
+    <string name="onestartdesc">Por favor, danos tu opinión</string>
+    <string name="fowstart">¡También te amamos!</string>
+    <string name="forstartdesc">Gracias por tu opinión</string>
+    <string name="myAlbum">Mi Álbum</string>
+    <string name="Create">Crear</string>
+    <string name="Delete">Eliminar</string>
+    <string name="DescDelete">¿Quieres eliminar este elemento?</string>
+    <string name="No">No</string>
+    <string name="Yes">Sí</string>
+</resources>
