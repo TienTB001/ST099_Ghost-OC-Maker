@@ -24,21 +24,21 @@ class LanguageAdapter(
             if (language.isSelected) {
                 binding.liner.setBackgroundResource(R.drawable.bg_language_selected)
                 Glide.with(binding.root).load(R.drawable.icon0).into(binding.imgcheck1)
-
-                binding.imgcheck1.isEnabled = true
-                binding.imgcheck1.isClickable = true
-
             } else {
                 binding.liner.setBackgroundResource(R.drawable.item_back)
                 Glide.with(binding.root).load(R.drawable.icon1).into(binding.imgcheck1)
-
-                binding.imgcheck1.isEnabled = false
-                binding.imgcheck1.isClickable = false
 
                 binding.imgcheck1.setOnClickListener(null)
             }
 
             binding.root.setOnClickListener {
+                languages.forEach {
+                    it.isSelected = false
+                }
+                language.isSelected = true
+                notifyDataSetChanged()
+            }
+            binding.imgcheck1.setOnClickListener {
                 languages.forEach {
                     it.isSelected = false
                 }
