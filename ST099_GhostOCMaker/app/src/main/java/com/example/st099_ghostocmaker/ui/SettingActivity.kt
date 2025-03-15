@@ -3,7 +3,7 @@ package com.example.st099_ghostocmaker.ui
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.st099_ghostocmaker.Language.Language
+import com.example.st099_ghostocmaker.Language.LanguageActivity
 import com.example.st099_ghostocmaker.MainActivity
 import com.example.st099_ghostocmaker.databinding.ActivitySettingBinding
 import com.example.st099_ghostocmaker.rate.Rate
@@ -25,7 +25,7 @@ class SettingActivity : AppCompatActivity() {
 
 
         binding.LNLanguage.setOnClickListener {
-            val intent = Intent(this, Language::class.java)
+            val intent = Intent(this, LanguageActivity::class.java)
             intent.putExtra("isSetting", true)
             startActivity(intent)
         }

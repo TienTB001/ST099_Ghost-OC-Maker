@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="#20314B"
     android:padding="16dp"
-    tools:context=".Language.Language">
+    tools:context=".Language.LanguageActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout2"

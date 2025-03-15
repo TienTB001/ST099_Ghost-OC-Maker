@@ -67,6 +67,10 @@ dependencies {
     //Lottie Animation
     implementation 'com.airbnb.android:lottie:6.3.0'
 
+    // Lam viec voi Json data
+    implementation 'com.google.code.gson:gson:2.10.1' // Hoặc phiên bản mới hơn
+
+
 
 
 

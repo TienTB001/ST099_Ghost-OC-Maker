@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.view.animation.LinearInterpolator
 import androidx.appcompat.app.AppCompatActivity
-import com.example.st099_ghostocmaker.Language.Language
+import com.example.st099_ghostocmaker.Language.LanguageActivity
 import com.example.st099_ghostocmaker.Ultils.StoreSharedPreferences
 import com.example.st099_ghostocmaker.databinding.ActivitySplashBinding
 import com.example.st099_ghostocmaker.intro.IntroActivity
@@ -41,7 +41,7 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             } else {
-                val intent = Intent(this, Language::class.java)
+                val intent = Intent(this, LanguageActivity::class.java)
                 startActivity(intent)
                 finish() // Đóng SplashActivity
             }

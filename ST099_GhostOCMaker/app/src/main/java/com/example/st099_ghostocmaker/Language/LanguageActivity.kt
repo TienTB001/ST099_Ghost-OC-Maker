@@ -11,7 +11,7 @@ import com.example.st099_ghostocmaker.Ultils.StoreSharedPreferences
 import com.example.st099_ghostocmaker.databinding.ActivityLanguageBinding
 import com.example.st099_ghostocmaker.intro.IntroActivity
 
-class Language : AppCompatActivity() {
+class LanguageActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLanguageBinding
     private lateinit var languageAdapter: LanguageAdapter
@@ -29,7 +29,7 @@ class Language : AppCompatActivity() {
 
                 binding.imgCheck.setColorFilter(
                     ContextCompat.getColor(
-                        this@Language,
+                        this@LanguageActivity,
                         R.color.gradient_start
                     )
                 )
@@ -59,7 +59,7 @@ class Language : AppCompatActivity() {
         }
 
         binding.rcvLanguage.apply {
-            layoutManager = LinearLayoutManager(this@Language)
+            layoutManager = LinearLayoutManager(this@LanguageActivity)
             adapter = languageAdapter
         }
 
