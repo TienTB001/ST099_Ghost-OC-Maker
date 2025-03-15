@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gradient_start">#FE9FBE</color>
+    <color name="gradient_end">#F24589</color>
+    <color name="background">#20314B</color>
+    <color name="item_background">#445268</color>
+    <color name="semi_transparent_white">#445268</color>
+    <color name="material_white">#CCFFFFFF</color>
+    <color name="text">#F76DA0</color>
+    <color name="text_Color">#FF84AC</color>
+    <color name="M1yCreation">#471747</color>
+    <color name="setting">#FFE2EC</color>
+    <color name="gray">#333</color>
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_names">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Hindi</item>
+        <item>Portuguese</item>
+        <item>German</item>
+        <item>Indonesian</item>
+    </string-array>
+
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>pt</item>
+        <item>de</item>
+        <item>id</item>
+    </string-array>
+
+    <array name="language_flags">
+        <item>@drawable/ic_flag_uk</item>
+        <item>@drawable/ic_flag_spain</item>
+        <item>@drawable/ic_flag_france</item>
+        <item>@drawable/ic_flag_india</item>
+        <item>@drawable/ic_flag_portugal</item>
+        <item>@drawable/ic_flag_germany</item>
+        <item>@drawable/ic_flag_indonesia</item>
+    </array>
+</resources>
