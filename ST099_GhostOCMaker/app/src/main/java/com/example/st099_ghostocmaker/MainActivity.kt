@@ -22,6 +22,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-        Log.d("hung", "onCreate: "+{dataGhost(this@MainActivity).size})
     }
 }
