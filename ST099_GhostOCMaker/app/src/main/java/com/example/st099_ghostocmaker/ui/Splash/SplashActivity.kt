@@ -7,6 +7,7 @@ import android.os.Looper
 import android.view.animation.LinearInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.example.st099_ghostocmaker.Language.LanguageActivity
+import com.example.st099_ghostocmaker.MainActivity
 import com.example.st099_ghostocmaker.Ultils.StoreSharedPreferences
 import com.example.st099_ghostocmaker.databinding.ActivitySplashBinding
 import com.example.st099_ghostocmaker.intro.IntroActivity
@@ -37,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
             // Chuyển sang màn hình LanguageActivity
 
             if (StoreSharedPreferences.readFromPreferences(this, "hasLanguage").equals("true")) {
-                val intent = Intent(this, IntroActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
@@ -46,6 +47,6 @@ class SplashActivity : AppCompatActivity() {
                 finish() // Đóng SplashActivity
             }
 
-        }, 2000) // Trì hoãn 2 giây
+        }, 0) // Trì hoãn 2 giây
     }
 }

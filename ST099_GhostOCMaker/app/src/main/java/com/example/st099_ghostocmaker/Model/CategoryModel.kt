@@ -1,0 +1,25 @@
+package com.chibimaker.create.avatar.cutechibi.model
+
+data class CategoryModel(
+    val avatarCategory: String,
+    val avatarChibi: String,
+    val isFlip: Boolean = false,
+    val bowl: CategoryDataModel? = null,
+    val effect: CategoryDataModel? = null,
+    val tail: CategoryDataModel? = null,
+    val backhair: CategoryDataModel? = null,
+    val body: CategoryDataModel? = null,
+    val mouth: CategoryDataModel? = null,
+    val eye: CategoryDataModel? = null,
+    val eyebrow: CategoryDataModel? = null,
+    val middlehair: CategoryDataModel? = null,
+    val sidehair: CategoryDataModel? = null,
+    val glasses: CategoryDataModel? = null,
+    val fronthair: CategoryDataModel? = null,
+    val topofhair: CategoryDataModel? = null,
+    val sock: CategoryDataModel? = null,
+    val shoe: CategoryDataModel? = null,
+    val pant: CategoryDataModel? = null,
+    val shirt: CategoryDataModel? = null,
+    val hat: CategoryDataModel? = null,
+)

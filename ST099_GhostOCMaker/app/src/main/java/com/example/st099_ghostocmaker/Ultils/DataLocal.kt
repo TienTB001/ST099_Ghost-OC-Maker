@@ -2,17 +2,22 @@ package com.example.st099_ghostocmaker.Ultils
 
 import android.content.Context
 import android.os.Build.VERSION_CODES.P
+import android.util.Log
+import com.chibimaker.create.avatar.cutechibi.model.CategoryDataModel
+import com.chibimaker.create.avatar.cutechibi.model.CategoryModel
 import com.example.st099_ghostocmaker.Model.ColorModel
 import com.example.st099_ghostocmaker.Model.GhostModel
 import com.example.st099_ghostocmaker.Model.LayerModel
+import java.io.IOException
+import kotlin.random.Random
 
 object DataLocal {
-    val PATH1 = "file:///android_asset/data/ghost1"
+    /*val PATH1 = "file:///android_asset/data/ghost1"
     val PATH2 = "file:///android_asset/data/ghost2"
     val PATH3 = "file:///android_asset/data/ghost3"
     val PATH4 = "file:///android_asset/data/ghost4"
     val PATH5 = "file:///android_asset/data/ghost5"
-    val PATH6 = "file:///android_asset/data/ghost6"
+    val PATH6 = "file:///android_asset/data/ghost6"*/
     val PATH7 = "file:///android_asset/data/ghost6"
     val PATH8 = "file:///android_asset/data/ghost8"
     val PATH9 = "file:///android_asset/data/ghost9"
@@ -23,6 +28,14 @@ object DataLocal {
     val PATH14 = "file:///android_asset/data/ghost14"
     val PATH15 = "file:///android_asset/data/ghost15"
     val PATH16 = "file:///android_asset/data/ghost16"
+
+    val PATH1 = "file:///android_asset/chibi/chibi1"
+    val PATH2 = "file:///android_asset/chibi/chibi2"
+    val PATH3 = "file:///android_asset/chibi/chibi3"
+    val PATH4 = "file:///android_asset/chibi/chibi4"
+    val PATH5 = "file:///android_asset/chibi/chibi5"
+    val PATH6 = "file:///android_asset/chibi/chibi6"
+
 
     val GHOST1 = "data/ghost1"
     val GHOST2 = "data/ghost2"
@@ -40,6 +53,13 @@ object DataLocal {
     val GHOST14 = "data/ghost14"
     val GHOST15 = "data/ghost15"
     val GHOST16 = "data/ghost16"
+
+    val CHIBI1 = "chibi/chibi1"
+    val CHIBI2 = "chibi/chibi2"
+    val CHIBI3 = "chibi/chibi3"
+    val CHIBI4 = "chibi/chibi4"
+    val CHIBI5 = "chibi/chibi5"
+    val CHIBI6 = "chibi/chibi6"
 
     val PATH_BACKKGROUND = "file:///android_asset/background"
 
@@ -274,6 +294,159 @@ object DataLocal {
         )
         return dataGhost
     }
+
+
+    fun getListCategory(context: Context): ArrayList<CategoryModel> {
+        val dataCategory = ArrayList<CategoryModel>()
+        val paths = listOf(PATH1, PATH2, PATH3, PATH4, PATH5, PATH6)
+
+        for (path in paths) {
+            for (i in 0 until 10) {
+                val categoryModel = when (path) {
+                    PATH1 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH1/avatar.png",
+                        backhair = getRandomCategory(context, PATH1, CHIBI1, "backhair"),
+                        body = getRandomCategory(context, PATH1, CHIBI1, "body"),
+                        eye = getRandomCategory(context, PATH1, CHIBI1, "eye"),
+                        eyebrow = getRandomCategoryNotColor(context, PATH1, CHIBI1, "eyebrow"),
+                        fronthair = getRandomCategory(context, PATH1, CHIBI1, "fronthair"),
+                        glasses = getRandomCategory(context, PATH1, CHIBI1, "glasses"),
+                        mouth = getRandomCategoryNotColor(context, PATH1, CHIBI1, "mouth"),
+                        pant = getRandomCategory(context, PATH1, CHIBI1, "pant"),
+                        shirt = getRandomCategory(context, PATH1, CHIBI1, "shirt"),
+                        sidehair = getRandomCategory(context, PATH1, CHIBI1, "sidehair"),
+                    )
+                    PATH2 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH2/avatar.png",
+                        backhair = getRandomCategoryNotColor(context, PATH2, CHIBI2, "backhair"),
+                        body = getRandomCategoryNotColor(context, PATH2, CHIBI2, "body"),
+                        eye = getRandomCategory(context, PATH2, CHIBI2, "eye"),
+                        eyebrow = getRandomCategoryNotColor(context, PATH2, CHIBI2, "eyebrow"),
+                        fronthair = getRandomCategoryNotColor(context, PATH2, CHIBI2, "fronthair"),
+                        hat = getRandomCategoryNotColor(context, PATH2, CHIBI2, "hat"),
+                        mouth = getRandomCategoryNotColor(context, PATH2, CHIBI2, "mouth"),
+                        pant = getRandomCategory(context, PATH2, CHIBI2, "pant"),
+                        shirt = getRandomCategory(context, PATH2, CHIBI2, "shirt"),
+                        shoe = getRandomCategory(context, PATH2, CHIBI2, "shoe"),
+                        sidehair = getRandomCategoryNotColor(context, PATH2, CHIBI2, "sidehair"),
+                        sock = getRandomCategory(context, PATH2, CHIBI2, "sock"),
+                    )
+                    PATH3 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH3/avatar.png",
+                        body = getRandomCategory(context, PATH3, CHIBI3, "body"),
+                        bowl = getRandomCategoryNotColor(context, PATH3, CHIBI3, "bowl"),
+                        eye = getRandomCategory(context, PATH3, CHIBI3, "eye"),
+                        eyebrow = getRandomCategoryNotColor(context, PATH3, CHIBI3, "eyebrow"),
+                        fronthair = getRandomCategory(context, PATH3, CHIBI3, "fronthair"),
+                        hat = getRandomCategoryNotColor(context, PATH3, CHIBI3, "hat"),
+                        mouth = getRandomCategoryNotColor(context, PATH3, CHIBI3, "mouth"),
+                        sidehair = getRandomCategory(context, PATH3, CHIBI3, "sidehair"),
+                    )
+                    PATH4 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH4/avatar.png",
+                        backhair = getRandomCategory(context, PATH4, CHIBI4, "backhair"),
+                        body = getRandomCategory(context, PATH4, CHIBI4, "body"),
+                        effect = getRandomCategoryNotColor(context, PATH4, CHIBI4, "effect"),
+                        eye = getRandomCategory(context, PATH4, CHIBI4, "eye"),
+                        eyebrow = getRandomCategoryNotColor(context, PATH4, CHIBI4, "eyebrow"),
+                        fronthair = getRandomCategory(context, PATH4, CHIBI4, "fronthair"),
+                        hat = getRandomCategoryNotColor(context, PATH4, CHIBI4, "hat"),
+                        mouth = getRandomCategoryNotColor(context, PATH4, CHIBI4, "mouth"),
+                        middlehair = getRandomCategory(context, PATH4, CHIBI4, "middlehair"),
+                        pant = getRandomCategory(context, PATH4, CHIBI4, "pant"),
+                        shirt = getRandomCategory(context, PATH4, CHIBI4, "shirt"),
+                        shoe = getRandomCategoryNotColor(context, PATH4, CHIBI4, "shoe"),
+                        sidehair = getRandomCategory(context, PATH4, CHIBI4, "sidehair"),
+                        sock = getRandomCategoryNotColor(context, PATH4, CHIBI4, "sock"),
+                        tail = getRandomCategoryNotColor(context, PATH4, CHIBI4, "tail"),
+                        topofhair = getRandomCategory(context, PATH4, CHIBI4, "topofhair"),
+                    )
+                    PATH5 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH5/avatar.png",
+                        body = getRandomCategory(context, PATH5, CHIBI5, "body"),
+                        eye = getRandomCategory(context, PATH5, CHIBI5, "eye"),
+                        eyebrow = getRandomCategoryNotColor(context, PATH5, CHIBI5, "eyebrow"),
+                        fronthair = getRandomCategory(context, PATH5, CHIBI5, "fronthair"),
+                        middlehair = getRandomCategory(context, PATH5, CHIBI5, "middlehair"),
+                        pant = getRandomCategory(context, PATH5, CHIBI5, "pant"),
+                        shirt = getRandomCategory(context, PATH5, CHIBI5, "shirt"),
+                        sidehair = getRandomCategory(context, PATH5, CHIBI5, "sidehair"),
+                        sock = getRandomCategoryNotColor(context, PATH5, CHIBI5, "sock"),
+                    )
+                    PATH6 -> CategoryModel(
+                        avatarCategory = i.toString(),
+                        avatarChibi = "$PATH6/avatar.png",
+                        body = getRandomCategoryNotColor(context, PATH6, CHIBI6, "body"),
+                        eye = getRandomCategory(context, PATH6, CHIBI6, "eye"),
+                        middlehair = getRandomCategoryNotColor(context, PATH6, CHIBI6, "middlehair"),
+                        mouth = getRandomCategoryNotColor(context, PATH6, CHIBI6, "mouth"),
+                        pant = getRandomCategory(context, PATH6, CHIBI6, "pant"),
+                        shirt = getRandomCategory(context, PATH6, CHIBI6, "shirt"),
+                        sidehair = getRandomCategoryNotColor(context, PATH6, CHIBI6, "sidehair"),
+                    )
+                    else -> null // Trường hợp không hợp lệ
+                }
+
+                // Thêm vào danh sách nếu categoryModel không null
+                categoryModel?.let { dataCategory.add(it) }
+            }
+        }
+
+        return dataCategory
+    }
+
+    fun getRandomCategoryNotColor(
+        context: Context, basePath: String, parentPath: String, layer: String
+    ): CategoryDataModel? {
+        try {
+            val assetManager = context.assets
+            val layerPath = "$basePath/$layer"
+            val quantityImage = assetManager.list("$parentPath/$layer")?.size ?: 1000
+            val positionLayer = if (quantityImage == 1) 1 else Random.nextInt(1, quantityImage)
+            val fullPath = "$layerPath/${layer}_${positionLayer}.png"
+
+            return CategoryDataModel(fullPath, fullPath, positionLayer)
+        } catch (e: IOException) {
+            e.printStackTrace()
+            return null
+        }
+    }
+
+    fun getRandomCategory(
+        context: Context, basePath: String, parentPath: String, layer: String
+    ): CategoryDataModel? {
+        try {
+            val assetManager = context.assets
+            val layerPath = "$basePath/$layer"
+
+            val layerPathSub = assetManager.list("$parentPath/$layer")?.size ?: 1000
+//            Log.d("nbhieu", "layerPathSub: ${layerPathSub}")
+            val positionColor = Random.nextInt(1, layerPathSub)
+//            Log.d("nbhieu", "positionColor: ${positionColor}")
+            val quantityImage =
+                assetManager.list("$parentPath/$layer/${layer}${positionColor}")?.size ?: 1000
+
+            val positionLayer = if (quantityImage == 1) 1 else Random.nextInt(1, quantityImage)
+
+            val fullPath = "$layerPath/${layer}${positionColor}/${layer}_${positionLayer}.png"
+            val pathKey = "$layerPath/${layer}1/${layer}_${positionLayer}.png"
+            return if (parentPath == "body") {
+                CategoryDataModel(fullPath, pathKey, positionLayer - 1, positionColor - 1)
+            } else {
+                CategoryDataModel(fullPath, pathKey, positionLayer, positionColor - 1)
+            }
+
+        } catch (e: IOException) {
+            e.printStackTrace()
+            return null
+        }
+    }
+
 
     private fun getData(end: Int, path: String, folder: String, numColors: Int = 0): ArrayList<LayerModel> {
         val output = arrayListOf<LayerModel>()

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back" />
+
+            <com.example.st099_ghostocmaker.TextStroke
+                android:id="@+id/txtTitleGradient"
+                style="@style/custom_text"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/jejuhallasan"
+                android:gravity="center"
+                android:text="@string/Category"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/btnMusic"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="21dp"
+                android:visibility="gone"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        android:clipChildren="false"
+        android:layout_marginBottom="32dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingHorizontal="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChoose"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+    <RelativeLayout
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_choose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txtChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="@dimen/_38sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:fontFamily="@font/chelsea_market"
+            android:gravity="center"
+            android:text="@string/Create"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:background="@color/white">
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/ctView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true" />
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathBowl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathEffect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathTail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathBackhair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathMouth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathEye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathEyeBrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathMiddleHair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathSideHair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathGlasses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathFrontHair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathTopOfHair"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathSock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathShoe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathPant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathShirt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.chibimaker.create.avatar.cutechibi.custom.imageview.CustomImageView
+                android:id="@+id/pathHat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <!--        <com.google.android.material.imageview.ShapeableImageView-->
+        <!--            android:id="@+id/imv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:scaleType="center" />-->
+    </androidx.cardview.widget.CardView>
+</layout>
